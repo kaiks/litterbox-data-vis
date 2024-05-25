@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    volumes:
+      - /home/karol/projects/ansible-playbooks/playbooks/downloads/ubuntu-spectre/home/karol/apps/homeassistant/config/:/hadata   # Mount the directory containing the database as read-only
+      - ./output:/output      # Mount the directory for output
