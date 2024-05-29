@@ -1,7 +1,4 @@
-SHELL=/bin/bash
-BASH_ENV=/root/.bashrc
-
 # Run script.rb at midnight every day
-0 0 * * * ruby /app/script.rb >> /var/log/cron.log 2>&1
+0 0 * * * /usr/local/bin/ruby /app/script.rb >> /var/log/cron.log 2>&1
 # Ensure the cron daemon does not exit
 # An empty line is required at the end of this file for a valid cron file.
