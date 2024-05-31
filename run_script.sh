@@ -4,5 +4,5 @@ export BUNDLE_APP_CONFIG="/usr/local/bundle"
 export GEM_HOME="/usr/local/bundle"
 # Add other necessary environment variables
 
-/usr/local/bin/ruby /usr/src/app/myscript.rb
+/usr/local/bin/ruby /app/script.rb
 
