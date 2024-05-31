@@ -1,4 +1,4 @@
 # Run script.rb at midnight every day
-0 0 * * * PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin ruby /app/script.rb >> /var/log/cron.log 2>&1
+0 0 * * * /app/run_script.sh >> /var/log/cron.log 2>&1
 # Ensure the cron daemon does not exit
 # An empty line is required at the end of this file for a valid cron file.

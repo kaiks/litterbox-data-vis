@@ -12,6 +12,7 @@ RUN gem install sqlite3 gruff
 
 # Copy the Ruby script into the container
 COPY script.rb /app/
+COPY run_script.sh /app/
 COPY crontab /etc/cron.d/crontab
 
 
